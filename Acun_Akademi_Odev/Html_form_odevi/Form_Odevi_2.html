@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Form Ödevi</title>
+    <style>
+        table {
+            margin: auto;
+            padding: 0.6rem;
+            width: 25%;
+            background-color: aqua;
+            border: 2px solid #0cc;
+            border-radius: 0.3rem;
+        }
+
+        #duzen {
+            width: 70%;
+            padding: 1rem;
+            border: 1px solid;
+            border-radius: 0.2rem;
+        }
+        select {
+            width: 85% !important;
+        }
+
+        textarea {
+            padding: 1rem;
+            border: 1px solid;
+            border-radius: 0.5rem;
+        }
+        #submit, #clear{
+            padding:0.5rem;
+            background-color:green;
+            border:0;
+            border-radius:0.2rem;
+            color:white;
+        }
+        #clear{
+            background-color:blue !important;
+        }
+        label{
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;"><u>Project Management</u></h2>
+    <form>
+        <table>
+            <tr>
+                <td><label>Project Name</label></td>
+                <td><input type="text" name="name" id="duzen" maxlength="35" placeholder="Project Name" /></td>
+            </tr>
+            <tr>
+                <td><label>Assigned to</label></td>
+                <td>
+                    <select name="atama" id="duzen">
+                            <option value="1">İnşaat M.</option>
+                            <option value="2" selected>Bilgisayar M.</option>
+                            <option value="3">Matematik M.</option>
+                            <option value="4">Çevre M.</option>
+                            <option value="5">Enerji M.</option>
+                    </select>
+                </td>                
+            </tr>
+            <tr>
+                <td><label>Start Date</label></td>
+                <td><input type="date" name="baslangic" id="duzen" /></td>
+              
+            </tr>
+            <tr>
+                <td><label>End Date</label></td>
+                <td><input type="date" name="bitis" id="duzen" /></td>
+            </tr>
+            <tr>
+                <td><label>Priority</label></td>
+                <td>
+                    <input type="radio" name="high" value="1" />High
+                    <input type="radio" name="average" value="2" />Average
+                    <input type="radio" name="low" value="3" />Low
+                </td>
+            </tr>
+            <tr>
+                <td><label>Description</label></td>
+                <td><textarea id="description" cols="20" rows="3" maxlength="350"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit" id="submit" value="SUBMIT" /></td>
+                <td><input type="reset" name="clear" id="clear" value="CLEAR" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
