@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Form Ödevi</title>
+   <style>
+       table{
+           margin:auto;
+           width:45%;
+       }
+       input{
+           width:70%;
+         padding:1rem;
+         border:1px solid;
+         border-radius:0.5rem;
+       }
+       textarea {
+           padding: 1rem;
+           border: 1px solid;
+           border-radius: 0.5rem;
+       }
+       #submit{
+           width:15%;
+           border-radius:0;
+           background-color:darkorange;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           color:white;
+           border:0;
+           position:absolute;
+           left:39%;
+       }
+   </style> 
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label>Email</label></td>
+                <td><label>Name</label></td>
+            </tr>
+            <tr>
+                <td><input type="email" name="email" id="email" maxlength="150" placeholder="Enter a valid email address" /></td>
+                <td><input type="text" name="name" id="name" maxlength="35" placeholder="Enter your Name" /></td>
+            </tr>
+            <tr>
+                <td><label>Phone</label></td>
+                <td><label>Address</label></td>
+            </tr>
+            <tr>
+                <td><input type="tel" name="phone" id="phone" maxlength="10" placeholder="Enter your phone (e.g +14155552675)" /></td>
+                <td><input type="text" name="adres" id="adres" maxlength="150" placeholder="Enter your address" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label>Message</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea maxlength="250" cols="75" rows="15" placeholder="Enter your message"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="submit" id="submit" value="SUBMIT" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
